@@ -2,3 +2,19 @@
     color: red;
     font-size: 40px;
 } */
+
+/* .navbar
+{
+    position: static;
+} */
+
+.header-nav {
+    font-size: 18px;
+    display: inline-block;
+    bottom:0;
+    right:10%;
+    color: white;
+}
+.nav-link {
+    color: white;
+}

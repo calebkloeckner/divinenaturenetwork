@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import Header from "../../components/Header";
-
+import { Card, Button, CardTitle, CardText, Col } from 'reactstrap';
 import { Container, Row } from "../../components/Grid/index";
 // import Sermons from "../Video/Sermons";
 
@@ -16,6 +16,7 @@ import {
 const items = [
   {
     id: 1,
+    src: 'http://www.divinenaturenetwork.com/wp-content/uploads/2014/01/image14.jpg',
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
@@ -30,17 +31,7 @@ const items = [
     caption: 'Slide 3'
   }
 ];
-// class Home extends Component {
 
-  
-// render() {
-//     return(
-//         <div className="home-header">
-//     <Header about='Home'/>
-//         </div>
-//         )
-//     }
-// }
 class Home extends Component {
     constructor(props) {
       super(props);
@@ -115,12 +106,34 @@ class Home extends Component {
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
           </Carousel>
+          <Row>
+      <Col className="justify-center" sm="2">
+        <Card body>
+          <CardTitle>Special Title Treatment</CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Button>Go somewhere</Button>
+        </Card>
+      </Col>
+      <Col className="justify-center" sm="2">
+        <Card body>
+          <CardTitle>Special Title Treatment</CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Button>Go somewhere</Button>
+        </Card>
+      </Col>
+      <Col className="justify-center" sm="2">
+        <Card body>
+          <CardTitle>Special Title Treatment</CardTitle>
+          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+          <Button>Go somewhere</Button>
+        </Card>
+      </Col>
+    </Row>
         </div>
       );
     }
   }
-  
-//   export default Example;
 
-export default Home;
+  
+  export default Home;
 

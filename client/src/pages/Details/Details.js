@@ -21,8 +21,15 @@ class Detail extends Component {
 componentDidMount (){
     API.getSermons(this.props.match.params.id)
       .then(res => {
+          
+          for(var i = 0; i < res.data.length; i++){
+              if(this.props.match.params.id === res.data[i]._id){
+                this.setState({title: res.data[i].title, videos: res.data[i].link, speaker: res.data[i].speaker})
+              }
+          }
+          console.log(res);
         console.log(this.props.match.params.id);
-        this.setState({})
+        
        
       })
       .catch(err => console.log(err));
@@ -31,26 +38,24 @@ componentDidMount (){
     return (
       <Container fluid>
         <Row>
-          <Col size="md-12">
-            <Jumbotron>
+          <div size="md-12">
+            <div className="row">
+            <div class="col-md-4 col-md-offset-4">
               <h1>
-                {this.state.videos} by {this.state.author}
+                  {this.state.title}:{'\n'}
+                {this.state.videos}{'\n'} By: {this.state.speaker}
               </h1>
-            </Jumbotron>
-          </Col>
+              </div>
+            </div>
+          </div>
         </Row>
+        
         <Row>
-          <Col size="md-10 md-offset-1">
-            <article>
-              <h1>Sermons</h1>
-              <p>{}</p>
-            </article>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-2">
-            <Link to="/videos">← Back to Authors</Link>
-          </Col>
+          <div className="md-2 col-md-offset-2">
+          <button>
+            <Link to="/sermons">← Back to Sermons</Link>
+            </button>
+          </div>
         </Row>
       </Container>
     );

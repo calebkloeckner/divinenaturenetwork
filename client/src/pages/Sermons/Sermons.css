@@ -1,3 +1,18 @@
-.sermon-header{
+/* .sermon-title{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 80px;
     color: red;
+} */
+.sermon-title {
+    color: red;
+}
+
+.sermon-titles {
+    color: red;
+}
+
+.sermon-card {
+    padding: 10%;
 }

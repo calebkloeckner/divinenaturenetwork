@@ -16,8 +16,8 @@ import Details from "./pages/Details";
 const App = () => (
   <Router>
     <div>
-    <Nav />
-    <Header />
+    {/* <Header /> */}
+    
       <Switch>
         {/* <Route exact path="/" component={Home} /> */}
         <Route exact path="/about" component={About} />
@@ -29,16 +29,11 @@ const App = () => (
         <Route exact path="/sermons" component={Sermons} />
         <Route exact path="/video" component={Video} />
         <Route exact path="/video/:id" component={Details} />
-        
       </Switch>
-     
+      
     </div>
   </Router>
   
 );
-
-// const Header = () =>{
-  
-// }
 
 export default App;

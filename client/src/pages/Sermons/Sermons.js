@@ -7,6 +7,9 @@ import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import "./Sermons.css";
+import { Media, Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button } from 'reactstrap';
+import Header from "../../components/Header";
 
 class Sermons extends Component {
   state = {
@@ -28,63 +31,53 @@ class Sermons extends Component {
       .catch(err => console.log(err));
   };
 
-//   deleteSermons = id => {
-//     API.deleteSermons(id)
-//       .then(res => this.loadSermons())
-//       .catch(err => console.log(err));
-//   };
-
-//   handleInputChange = event => {
-//     const { name, value } = event.target;
-//     this.setState({
-//       [name]: value
-//     });
-//   };
-
-//   handleFormSubmit = event => {
-//     event.preventDefault();
-//     if (this.state.title && this.state.speaker) {
-//       console.log("========", this.state);
-//       API.saveSermon({
-//         title: this.state.title,
-//         speaker: this.state.speaker,
-//         link: this.state.link
-//       })
-//         .then(res => this.loadSermons())
-//         .catch(err => console.log(err));
-//     }
-//   };
 
   render() {
     return (
-      <div className="container sermon-header" fluid>
-          <Col>
-            <Jumbotron>
-              <h1>Previous Sermons</h1>
-            </Jumbotron>
+        
+        <div className="sermon-header" fluid>
+<div>
+    <div className="sermon-title">
+    <Header sermon="Past Sermons" />
+      <h1>
+      </h1>
+      </div>
+    </div>
+    <Row>
+    <Col sm="6">
+          <Card> 
+          <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
             {this.state.videos.length ? (
-              <List>
+              <Card body className="sermon-card">
+                   <CardTitle>Sermon</CardTitle>
                 {this.state.videos.map(video => (
-                  <ListItem key={video._id}>
+                  <Card key={video._id}>
                     <Link to={"/video/" + video._id}>
-                      <strong>
+                      <strong className="sermon-titles">
+                        <Card body>
                         <ul>
-                          <li>{video.title}</li>
-                          <li>{video.speaker}</li>
-                        </ul>   
+                          {video.title}{"\n"}
+                          {video.speaker}
+                        </ul>
+                        </Card>  
+                         
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => this.deleteVideo(video._id)} />
-                  </ListItem>
+                    {/* <DeleteBtn onClick={() => this.deleteVideo(video._id)} /> */}
+                  </Card>
                 ))}
-              </List>
+              </Card>
             ) : (
               <h3>No Results to Display</h3>
             )}
+          </Card>
           </Col>
+          </Row>
       </div>
+      
     );
   }
 }
 
 export default Sermons;
+
