@@ -13,7 +13,8 @@ class Sermons extends Component {
     videos: [],
     title: [],
     speaker: "",
-    link:""
+    link:"",
+    image:[]
   };
 
   componentDidMount() {
@@ -23,7 +24,7 @@ class Sermons extends Component {
   loadSermons = () => {
     API.getSermons()
       .then(res =>
-        this.setState({ videos: res.data, title: "", speaker: "", link: "" })
+        this.setState({ videos: res.data, title: "", speaker: "", link: "", image:"" })
       )
       .catch(err => console.log(err));
   };
@@ -48,7 +49,8 @@ class Sermons extends Component {
       API.saveSermon({
         title: this.state.title,
         speaker: this.state.speaker,
-        link: this.state.link
+        link: this.state.link,
+        image: this.state.image
       })
         .then(res => this.loadSermons())
         .catch(err => console.log(err));
@@ -70,6 +72,12 @@ class Sermons extends Component {
                 onChange={this.handleInputChange}
                 name="title"
                 placeholder="Title"
+              />
+              <Input
+                value={this.state.image}
+                onChange={this.handleInputChange}
+                name="image"
+                placeholder="Image"
               />
               <Input
                 value={this.state.speaker}

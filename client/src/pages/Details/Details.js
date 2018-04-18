@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import YouTube from 'react-youtube';
 
 class Detail extends Component {
     state = {
@@ -35,19 +36,39 @@ componentDidMount (){
       .catch(err => console.log(err));
   };
   render() {
+    const opts = {
+        height: '390',
+        width: '640',
+        playerVars: { // https://developers.google.com/youtube/player_parameters
+          autoplay: 1
+        }
+      };
     return (
+      
+    
       <Container fluid>
+       
         <Row>
+        
           <div size="md-12">
             <div className="row">
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-4 col-md-offset-6">
               <h1>
-                  {this.state.title}:{'\n'}
-                {this.state.videos}{'\n'} By: {this.state.speaker}
+              {this.state.title}
+              </h1>
+              <h1>
+              By: {this.state.speaker}
+              <YouTube
+              
+      videoId={this.state.videos}
+      opts={opts}
+      onReady={this._onReady}
+    />
               </h1>
               </div>
             </div>
           </div>
+        
         </Row>
         
         <Row>
@@ -63,3 +84,5 @@ componentDidMount (){
 }
 
 export default Detail;
+
+

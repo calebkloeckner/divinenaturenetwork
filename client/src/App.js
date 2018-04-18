@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 // import Live from "./pages/Live";
 // import Login from "./pages/Login";
-// import Sacraments from "./pages/Sacraments";
+import Sacraments from "./pages/Sacraments";
 import Sermons from "./pages/Sermons";
 import Video from "./pages/Video";
 import Header from "./components/Header";
@@ -25,7 +25,7 @@ const App = () => (
         <Route exact path="/home" component={Home} />
         {/* <Route exact path="/live" component={Live} /> */}
         {/* <Route exact path="/login" component={Login} /> */}
-        {/* <Route exact path="/sacraments" component={Sacraments} /> */}
+        <Route exact path="/sacraments" component={Sacraments} />
         <Route exact path="/sermons" component={Sermons} />
         <Route exact path="/video" component={Video} />
         <Route exact path="/video/:id" component={Details} />

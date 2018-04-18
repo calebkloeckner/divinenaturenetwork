@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import { Card, Button, CardTitle, CardText, Col } from 'reactstrap';
 import { Container, Row } from "../../components/Grid/index";
 // import Sermons from "../Video/Sermons";
+import Nav from "../../components/Nav";
 
 import {
   Carousel,
@@ -106,29 +107,32 @@ class Home extends Component {
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
           </Carousel>
-          <Row>
-      <Col className="justify-center" sm="2">
+          <Nav className="header-nav"/>
+        
+        <Row>
+      <Col className="home-card" sm={{size: 6}}>
         <Card body>
           <CardTitle>Special Title Treatment</CardTitle>
           <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
           <Button>Go somewhere</Button>
         </Card>
       </Col>
-      <Col className="justify-center" sm="2">
+      <Col className="home-card" sm={{size: 6}}>
         <Card body>
           <CardTitle>Special Title Treatment</CardTitle>
           <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
           <Button>Go somewhere</Button>
         </Card>
       </Col>
-      <Col className="justify-center" sm="2">
+      <Col className="home-card" sm={{size: 6}}>
         <Card body>
           <CardTitle>Special Title Treatment</CardTitle>
           <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
           <Button>Go somewhere</Button>
         </Card>
       </Col>
-    </Row>
+ </Row>
+
         </div>
       );
     }

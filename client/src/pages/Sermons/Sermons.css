@@ -13,6 +13,8 @@
     color: red;
 }
 
-.sermon-card {
-    padding: 10%;
+.card {
+    margin: 5%;
+    width: 500px;
+
 }
