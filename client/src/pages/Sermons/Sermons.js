@@ -17,7 +17,8 @@ class Sermons extends Component {
     videos: [],
     title: [],
     speaker: "",
-    link:""
+    link:"",  
+    image:""
   };
 
   componentDidMount() {
@@ -27,7 +28,7 @@ class Sermons extends Component {
   loadSermons = () => {
     API.getSermons()
       .then(res =>
-        this.setState({ videos: res.data, title: "", speaker: "", link: "" })
+        this.setState({ videos: res.data, title: "", speaker: "", link: "", image: "" })
       )
       .catch(err => console.log(err));
   };
@@ -45,32 +46,20 @@ class Sermons extends Component {
     <Row>
     <Col className="sermon-list" sm={{offset: 4}}>
     {this.state.videos.map(video => (
-          <Card> 
+          <Card key={video._id}> 
           <CardImg top width="100%" src={video.image} alt="Card image cap" />
-            {video.length ? (
-              <Card body className="sermon-card">
-                   <CardTitle>Sermon</CardTitle>
-                
-                  <Card key={video._id}>
+
                     <Link to={"/video/" + video._id}>
                       <strong className="sermon-titles">
-                        <Card body>
                         <ul>
                           {video.title}
                           {"\n"}
                           {video.speaker}
                         </ul>
-                        </Card>  
-                         
+
                       </strong>
                     </Link>
-                    {/* <DeleteBtn onClick={() => this.deleteVideo(video._id)} /> */}
-                  </Card>
-                
-              </Card>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
+
           </Card>
           ))}
           </Col>

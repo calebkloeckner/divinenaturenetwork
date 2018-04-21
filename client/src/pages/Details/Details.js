@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DeleteBtn from "../../components/DeleteBtn";
 import Jumbotron from "../../components/Jumbotron";
+import Header from "../../components/Header";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
@@ -37,8 +38,8 @@ componentDidMount (){
   };
   render() {
     const opts = {
-        height: '390',
-        width: '640',
+        height: '480',
+        width: '800',
         playerVars: { // https://developers.google.com/youtube/player_parameters
           autoplay: 1
         }
@@ -47,15 +48,13 @@ componentDidMount (){
       
     
       <Container fluid>
-       
+       <Header details={this.state.title}/>
         <Row>
         
           <div size="md-12">
             <div className="row">
-            <div class="col-md-4 col-md-offset-6">
-              <h1>
-              {this.state.title}
-              </h1>
+            <div className="col-md-4 col-md-offset-6">
+           
               <h1>
               By: {this.state.speaker}
               <YouTube

@@ -11,6 +11,9 @@ const Header = (props) =>(
     <div className="aboutTitle">{props.about} </div>
     <div>{props.video}</div>
     <div className="sermonTitle">{props.sermon}</div> 
+    <div className="detailsTitle">{props.details}</div> 
+    <div className="sacramentsTitle">{props.sacraments}</div>
+
     <Nav />
   </div>
 );

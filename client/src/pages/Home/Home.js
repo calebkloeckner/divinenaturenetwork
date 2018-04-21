@@ -5,6 +5,7 @@ import { Card, Button, CardTitle, CardText, Col } from 'reactstrap';
 import { Container, Row } from "../../components/Grid/index";
 // import Sermons from "../Video/Sermons";
 import Nav from "../../components/Nav";
+import Facebook from "../../components/Facebook";
 
 import {
   Carousel,
@@ -107,7 +108,9 @@ class Home extends Component {
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
           </Carousel>
+          <Jumbotron>
           <Nav className="header-nav"/>
+          </Jumbotron>
         
         <Row>
       <Col className="home-card" sm={{size: 6}}>
@@ -132,10 +135,13 @@ class Home extends Component {
         </Card>
       </Col>
  </Row>
+ <Facebook />
 
         </div>
+        
       );
     }
+    
   }
 
   

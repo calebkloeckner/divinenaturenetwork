@@ -1,0 +1,37 @@
+import React from "react";
+
+const Eucharist = () => (
+  <div>
+    <h1>EUCHARIST – The Lamb’s supper feast</h1>
+    <p>The Eucharist, or Holy Communion, is the center of Orthodox Christian worship. We refer to ourselves as a “Eucharistic community” meaning that all believers gather in unity at the Lord’s Table. The Eucharist is more than just a ritual, it is a divine mystery. The Christian Orthodox Church of America believes that the real presence of Christ is in the consecrated bread and wine. </p>
+    <p>To understand our perspective on Holy Communion, it is important to compare our views with those of other churches. For example, the Roman Catholic Church uses the term “transubstantiation” to describe their understanding of what happens to the bread and wine during the Eucharist. According to this view, the bread and the wine are literally changed in to the body and blood of Jesus Christ. </p>  
+    <p>“As for the bread, as bread, nothing remained of it. After the prayers of consecration, not even a morsel of it existed. It only looked like bread; in reality it was the Body of Christ which hung on Calvary.” (Bajis, 1996)</p>
+    
+    <p>The Orthodox perspective is different from Roman Catholicism in describing what happens to the elements at the consecration. We believe that the Eucharist is indeed a mystery, and that the bread and wine are really transformed into the body and blood of Christ. However, we do not attempt to explain exactly how this happens. For the Orthodox, we do not mind letting a mystery remain a mystery. We know that the Lord Jesus Himself commanded us to eat his body and drink his blood, and we know that by doing so we are nourished spiritually. We are not required to believe any more or any less.</p>
+    
+   <p> The word “Eucharist” literally means thanksgiving. It is a meal in which we call forth (anamnesis) the death, burial, and resurrection of Christ. In our churches Holy Communion is the climax of our worship. We pray to the Father to send down His Holy Spirit upon the bread and the wine (epiclesis), and also upon his people. When we enter into this sacred act, we are transformed by the Holy Spirit just as the bread and wine are changed. This beautiful mystery cannon be explained by words or theological precision. It is something which must be experienced by those who have hidden their lives in Christ.</p>
+    
+    <p>The Orthodox view of Holy Communion is often misunderstood by other Christians, particularly Protestants. Since the reformation, many Christians have reacted strongly against some of the medieval practices of the Roman Catholic Church. Holy Communion is often perceived as a “work” to attain righteousness. However, this has never been the view of the Orthodox Church. We understand the Eucharist to be a reaffirmation of Christ’s atoning work on the cross.</p>
+    
+    <p>Another point of confusion is the term “sacrifice.” By using the word sacrifice, we do not mean that Jesus is sacrificed again and again as some understand. Orthodoxy agrees with scripture which declares that Jesus’ crucifixion was a sacrifice “once and for all.” Each time we celebrate the Eucharist (thanksgiving) we are The word “Eucharist” literally means thanksgiving. It is a meal in which we call forth (anamnesis) the death, burial, and resurrection of Christ. In our churches Holy Communion is the climax of our worship. We pray to the Father to send down His Holy Spirit upon the bread and the wine (epiclesis), and also upon his people. When we enter into this sacred act, we are transformed by the Holy Spirit just as the bread and wine are changed. This beautiful mystery cannon be explained by words or theological precision. It is something which must be experienced by those who have hidden their lives in Christ.</p>
+    
+    <p>The Orthodox view of Holy Communion is often misunderstood by other Christians, particularly Protestants. Since the reformation, many Christians have reacted strongly against some of the medieval practices of the Roman Catholic Church. Holy Communion is often perceived as a “work” to attain righteousness. However, this has never been the view of the Orthodox Church. We understand the Eucharist to be a reaffirmation of Christ’s atoning work on the cross.</p>
+    
+    <p>Another point of confusion is the term “sacrifice.” By using the word sacrifice, we do not mean that Jesus is sacrificed again and again as some understand. Orthodoxy agrees with scripture which declares that Jesus’ crucifixion was a sacrifice “once and for all.” Each time we celebrate the Eucharist (thanksgiving) we are offering back to the Father the sacrifice of His Son Jesus Christ. It is truly a sacrifice of praise.</p>
+    
+    <p>The Eucharist and the Orthodox Understanding of Time 
+    We uphold the ancient teaching that at the Lord’s Table, we return to that very moment itself. Obviously our perspective is more than just a symbolic remembrance, but beyond this definition of mystery we cannot go. The Eucharist is called the “mystical supper,” and those who truly believe received the transforming power of the body and blood of Christ.</p>
+    
+    <p>Some Christians object to the idea that Holy Communion is more than just a mere symbol. To this we respond by clarifying how Orthodox Christians ultimately perceive worship. One of the most significant elements of our perception has to do with time. Most people understand time as chronological and linear (past, present, and future). When it comes to worship their views are no different. In many Protestant churches, worship is understood in the now (the present). They remember the past and look forward to the future. While this seems like a logical way to understand worship, the Orthodox practice is quite different.</p>
+    
+   <p>Our God, the Creator and the Uncreated Light, exists outside of linear and chronological time. This is why in the Bible; the Lord can speak of the future in the past tense. God is omniscient (all-knowing) and He is eternal. On the other hand, we must live out our lives toward understanding eternity. God is already at the end of time, waiting for us. God exists in the past, present, and future, and he exists outside the limitations of linear time. He is the same yesterday, today, and forever. Sometimes we need to be reminded of just how incredible God is, and how limited we are in our understanding of Him.</p>
+    
+    <p>We say all of this to bring your attention to a very important aspect of Orthodox theology, and how we understand worship. When we gather to celebrate the Eucharist, we no longer see ourselves in “ordinary time.” The Orthodox Church sees its worship as a participation in the worship of heaven, which transcends linear time. Therefore, the bread and the wine we partake of, is from the same table that Jesus sat at with his disciples. We speak of the Eucharist as a “sacrifice,” but this is to be understood within this context of time. We uphold the ancient teaching that during the Eucharist, we are truly at the Lord’s Table.</p>
+    
+    <p>The Eucharist is called the “mystical supper,” and those who truly believe are receiving the transforming power of the body and blood of Jesus Christ.</p>
+    
+    
+  </div>
+);
+
+export default Eucharist;

@@ -1,39 +1,62 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Header from "../../components/Header";
+import Navpills from "../../components/Navpills";
 import { Jumbotron, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import "./Sacraments.css";
+import Baptism from "../sevenSac/Baptism";
+import Chrismation from "../sevenSac/Chrismation";
+import Reconciliation from "../sevenSac/Reconciliation";
+import Eucharist from "../sevenSac/Eucharist";
+import HolyMatrimony from "../sevenSac/HolyMatrimony";
+import HolyOrders from "../sevenSac/HolyOrders";
+import HolyUnction from "../sevenSac/HolyUnction";
 
-class SacramentsModal extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false
-    };
+class Sacraments extends Component {
+  state = {
+    sacrament:""
+  };
 
-    this.toggle = this.toggle.bind(this);
-  }
+  handlePageChange = sac => {
+    this.setState({ sacrament: sac });
+  };
 
-  toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
-  }
+  renderSacrament = () => {
+    if (this.state.sacrament === "Baptism") {
+      return <Baptism />;
+    } else if (this.state.sacrament === "Chrismation") {
+      return <Chrismation />;
+    } else if (this.state.sacrament === "Reconciliation") {
+      return <Reconciliation />;
+    } else if (this.state.sacrament === "Eucharist") {
+      return <Eucharist />;
+    } else if (this.state.sacrament === "Holy Matrimony") {
+      return <HolyMatrimony />;
+    } else if (this.state.sacrament === "Holy Orders") {
+      return <HolyOrders />;
+    } else if (this.state.sacrament === "Holy Unction") {
+      return <HolyUnction />;
+    } else {
+      
+    }
+  };
 
   render() {
     return (
       <div>
-        <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-          <ModalBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-          </ModalFooter>
-        </Modal>
+        <Header sacraments="Seven Sacraments"/>
+      <div className="container seven-sacraments">
+        <Navpills
+          currentPage={this.state.currentPage}
+          handlePageChange={this.handlePageChange}
+        />
+        <div className="sacrament">
+        {this.renderSacrament()}
+        </div>
+      </div>
       </div>
     );
   }
 }
 
-export default SacramentsModal;
+
+export default Sacraments;

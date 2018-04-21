@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./pages/About";
 // import Admin from "./pages/Admin";
 import Home from "./pages/Home";
-// import Live from "./pages/Live";
+import Live from "./pages/Live";
 // import Login from "./pages/Login";
 import Sacraments from "./pages/Sacraments";
 import Sermons from "./pages/Sermons";
@@ -19,11 +19,11 @@ const App = () => (
     {/* <Header /> */}
     
       <Switch>
-        {/* <Route exact path="/" component={Home} /> */}
+        <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         {/* <Route exact path="/admin" component={Admin} /> */}
         <Route exact path="/home" component={Home} />
-        {/* <Route exact path="/live" component={Live} /> */}
+        <Route exact path="/live" component={Live} />
         {/* <Route exact path="/login" component={Login} /> */}
         <Route exact path="/sacraments" component={Sacraments} />
         <Route exact path="/sermons" component={Sermons} />
