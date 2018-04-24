@@ -10,6 +10,7 @@ import "./Sermons.css";
 import { Media, Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button, Col } from 'reactstrap';
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 
 class Sermons extends Component {
@@ -64,6 +65,7 @@ class Sermons extends Component {
           ))}
           </Col>
           </Row>
+          <Footer />
       </div>
       
     );
