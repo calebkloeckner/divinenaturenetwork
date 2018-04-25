@@ -35,7 +35,7 @@ app.use(routes);
 app.set('view engine', 'ejs');
 
 // Connect to the Mongo DB
-mongoose.connect('mongodb://admin:admin@ds157639.mlab.com:57639/divinenaturenetwork' || "mongodb://localhost/sermons", function(error){
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sermons", function(error){
     if(error) {
         return console.log("its broke");
     } else {
