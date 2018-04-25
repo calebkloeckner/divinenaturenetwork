@@ -36,8 +36,11 @@ export default class Home extends Component {
     placement="left">
     The Divine Nature Network
   </Slide>
+
 </Slider>
+<Nav />
 </Row>
+
 <div className="container">
 <Col s={3} className="center">
       <h1>Man is not just a human having a spiritual experience; he is a Spirit having a human experience.</h1>

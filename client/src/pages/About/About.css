@@ -1,11 +1,3 @@
-/* .about-title{
-    background: url("https://i.ytimg.com/vi/6y-OAsRZbas/maxresdefault.jpg") no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Playfair Display SC', serif;
-    font-size: 80px;
-} */
+.jumbotron {
+    color: red;
+}
