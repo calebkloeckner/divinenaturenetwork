@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import { Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-import { Media, Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, Col } from 'reactstrap';
+// import { Media, Card, CardImg, CardText, CardBody,
+//     CardTitle, CardSubtitle, Button, Col } from 'reactstrap';
 import Header from "../../components/Header";
 import Iframe from 'react-iframe'
 

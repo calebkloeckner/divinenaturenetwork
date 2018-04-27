@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Navpills from "../../components/Navpills";
-import { Jumbotron, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+// import { Jumbotron, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import "./Sacraments.css";
 import Baptism from "../sevenSac/Baptism";
 import Chrismation from "../sevenSac/Chrismation";
