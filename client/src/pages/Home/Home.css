@@ -1,10 +1,18 @@
-.donate-card{
-    color: green;
-    font-size: 15px;
+.card {
+    font-size: 25px;
+    width: 200px;
 }
-.card-content {
-    padding: 0;
+image {
+    height: 200px;
 }
-
+h2 {
+    color: white;
+    font-family: 'Arapey', serif;
+}
+h1 {
+    font-size: 40px;
+    font-family: 'Luckiest Guy', cursive;
+    color: rgb(0, 0, 151);
+}
 
 

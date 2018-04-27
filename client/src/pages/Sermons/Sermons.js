@@ -53,8 +53,8 @@ class Sermons extends Component {
                     <Link to={"/video/" + video._id}>
                       <strong className="sermon-titles">
                         <ul>
-                          {video.title}
-                          {"\n"}
+                          {video.title} - by {"\n"}
+                         
                           {video.speaker}
                         </ul>
 

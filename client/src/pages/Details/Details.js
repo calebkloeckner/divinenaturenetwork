@@ -8,6 +8,8 @@ import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import YouTube from 'react-youtube';
+import './Details.css';
+import Footer from "../../components/Footer";
 
 class Detail extends Component {
     state = {
@@ -51,9 +53,9 @@ componentDidMount (){
        <Header details={this.state.title}/>
         <Row>
         
-          <div size="md-12">
-            <div className="row">
-            <div className="col-md-4 col-md-offset-6">
+          <div size="md-6">
+            <div className="row title">
+            <div className="col-md-6 col-md-offset-4">
            
               <h1>
               By: {this.state.speaker}
@@ -79,7 +81,9 @@ componentDidMount (){
         </Row>
       </Container>
     );
+    <Footer />
   }
+ 
 }
 
 export default Detail;

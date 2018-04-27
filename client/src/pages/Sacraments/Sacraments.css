@@ -1,9 +1,18 @@
 .seven-sacraments {
-    color: green;
-    font-size: 22px;
+    color: rgb(95, 106, 250);
+    font-size: 24px;
     display: block;
+
+    
 }
 
 .sacrament{
-    color: rgb(150, 150, 150);
+    color: white;
+    font-size: 25px;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.sacrament h1 {
+    color: white;
+    font-size:25px;
+    font-family: 'Frank Ruhl Libre', serif;
 }
