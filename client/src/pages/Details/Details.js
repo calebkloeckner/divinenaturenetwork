@@ -18,9 +18,7 @@ class Detail extends Component {
       speaker: "",
       link:""
     };
-  // Add code to get the book with an _id equal to the id in the route param
-  // e.g. http://localhost:3000/books/:id
-  // The book id for this route can be accessed using this.props.match.params.id
+  // Single video once clicked on
 
 componentDidMount (){
     API.getSermons(this.props.match.params.id)
@@ -47,8 +45,6 @@ componentDidMount (){
         }
       };
     return (
-      
-    
       <Container fluid>
        <Header details={this.state.title}/>
         <Row>
@@ -68,10 +64,8 @@ componentDidMount (){
               </h1>
               </div>
             </div>
-          </div>
-        
-        </Row>
-        
+          </div>        
+        </Row>        
         <Row>
           <div className="md-2 col-md-offset-2">
           <button>
@@ -83,7 +77,6 @@ componentDidMount (){
     );
     <Footer />
   }
- 
 }
 
 export default Detail;

@@ -1,13 +1,23 @@
-.card {
+.card-thingy {
     font-size: 25px;
-    width: 200px;
+    width: 300px !important;
+    
 }
 image {
     height: 200px;
 }
+.card-thingy {
+    color: rgb(110, 2, 124);
+    font-family: 'Arapey', serif;
+}
 h2 {
     color: white;
+    font-size: 40px;
     font-family: 'Arapey', serif;
+}
+h5 {
+    color: red;
+    font-size: 30px;    
 }
 h1 {
     font-size: 40px;

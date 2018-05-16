@@ -99,32 +99,6 @@ class Sermons extends Component {
               </FormBtn>
             </form>
           </Col>
-          {/* <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Previous Sermons</h1>
-            </Jumbotron>
-            {this.state.videos.length ? (
-              <List>
-                {this.state.videos.map(video => (
-                  <ListItem key={video._id}>
-                    <Link to={"/videos/" + video._id}>
-                      <strong>
-                        <ul>
-                          <li>{video.title}</li>
-                          <li>{video.speaker}</li>
-                        </ul>
-                        
-                      </strong>
-                    </Link>
-                    <DeleteBtn onClick={() => this.deleteVideo(video._id)} />
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-          </Col> */}
-       
       </Container>
     );
   }
