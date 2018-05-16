@@ -33,8 +33,7 @@ class Sermons extends Component {
       )
       .catch(err => console.log(err));
   };
-
-
+  // load sermons saved in DB
   render() {
     return (
         
@@ -49,18 +48,15 @@ class Sermons extends Component {
     {this.state.videos.map(video => (
           <Card key={video._id}> 
           <CardImg top width="100%" src={video.image} alt="Card image cap" />
-
-                    <Link to={"/video/" + video._id}>
-                      <strong className="sermon-titles">
-                        <ul>
-                          {video.title} - by {"\n"}
-                         
-                          {video.speaker}
-                        </ul>
-
-                      </strong>
-                    </Link>
-
+              <Link to={"/video/" + video._id}>
+                <strong className="sermon-titles">
+                  <ul>
+                    {video.title} - by {"\n"}
+                    
+                    {video.speaker}
+                  </ul>
+                </strong>
+              </Link>
           </Card>
           ))}
           </Col>

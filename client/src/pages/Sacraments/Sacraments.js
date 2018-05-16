@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Navpills from "../../components/Navpills";
-import { Jumbotron, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import "./Sacraments.css";
 import Baptism from "../sevenSac/Baptism";
 import Chrismation from "../sevenSac/Chrismation";
@@ -40,7 +39,7 @@ class Sacraments extends Component {
       
     }
   };
-
+// renders single sacrament onced clicked on
   render() {
     return (
       <div>
@@ -59,6 +58,5 @@ class Sacraments extends Component {
     );
   }
 }
-
 
 export default Sacraments;
