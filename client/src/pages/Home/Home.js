@@ -48,7 +48,16 @@ export default class Home extends Component {
   <div className="card-body">
     <h5 className="card-title">Donate</h5>
     <p className="card-text">There is a Divine Connection between our resources and our relationships. Your heart will follow your treasure!</p>
-    <a href="https://www.paypal.com/donate/?token=Ml9LxfQnhERVqOrHt4-YRIBauT3x79vx4-EeMjBHBnRWi7-IaHnW703KWYb47tYxSoyyFG&country.x=US&locale.x=US" className="btn btn-primary">Donate</a>
+    <div className="donate">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" >
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="E6T72USYBK98G" />
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+</div>
+    {/* <a href="https://www.paypal.com/donate/?token=Ml9LxfQnhERVqOrHt4-YRIBauT3x79vx4-EeMjBHBnRWi7-IaHnW703KWYb47tYxSoyyFG&country.x=US&locale.x=US" className="btn btn-primary">Donate</a> */}
+    
   </div>
 </div>
 <div className="card card-thingy col d-flex justify-content-center" style={{width: "18rem;"}}>
@@ -67,7 +76,9 @@ export default class Home extends Component {
       <a href="../Sermons" className="btn btn-primary">Go to past sermons</a>
     </div>
 </div>
+
 </Row>
+
 </div>
 
     );
